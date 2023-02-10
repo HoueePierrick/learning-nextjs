@@ -9,14 +9,19 @@
     "resolveJsonModule": true,
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "jsx": "react",
-    "allowJs": true
+    "jsx": "preserve",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true
   },
   "devDependencies": {
     "@types/node": "^18.11.9"
   },
   "type": "module",
-  "include": ["Aponet.ts"],
+  "include": ["styles", "public", "pages"],
   "exclude": ["node_modules", "**/*.spec.ts"],
   "moduleResolution": "node",
   "module": "commonjs",
